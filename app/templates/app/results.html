@@ -1,0 +1,13 @@
+{% extends 'app/base.html' %}
+{%load staticfiles%}
+{% block content %}
+{%if datas%}
+<div align="left">
+<h2><h2 style="text-align:left;"><font face="arial" color="red"><i><b>.....Tweets of the user.....</i></b></h2>
+<ol>
+        {%for data in datas%}
+                <li>{{data}}</li>
+        {%endfor%}
+</ol>
+</div>{%endif%}
+{% endblock content %}

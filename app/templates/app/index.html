@@ -1,0 +1,11 @@
+<head></head>
+{% extends "app/base.html" %}
+{% block content %}
+<form action="results" method="POST" name="POST">
+{% csrf_token %}
+        <input type="text" name="twittername" tabindex="1" required>
+        <p><input name="tweet" type="submit"  value="get tweets"></p>
+        </form>
+
+
+{% endblock %}
