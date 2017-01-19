@@ -8,8 +8,8 @@ import json
 def home(request):
     return render(request, 'app/index.html')
 def results(request):
-    git=None
+    t=None
     a=request.POST.get(str('twittername'))
-    git=tweets(a)
-    return render(request, 'app/results.html',{'datas':git})
+    t=tweets(a)
+    return render(request, 'app/results.html',{'datas':t})
 
