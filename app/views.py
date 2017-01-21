@@ -11,5 +11,5 @@ def results(request):
     t=None
     a=request.POST.get(str('twittername'))
     t=tweets(a)
-    return render(request, 'app/results.html',{'datas':t})
+    return render(request, 'app/results.html',{'datas':t,'username':a})
 
